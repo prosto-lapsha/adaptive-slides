@@ -1,79 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>Адаптивная верстка</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
 </head>
 <body class="shower list">
+	<style>
+		.slide::after {
+			display: none;
+		}
+	</style>
+
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Адаптивная верстка</h1>
+		<p>Софья Лапшина</p>
 	</header>
+
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<img src="pictures/cover.jpg" alt="" class="cover">
-		<!--
-			To apply styles to the certain slides
-			set slide ID to get needed elements
-			-->
+		<h2 class="shrink">Адаптивная верстка</h2>
+		<p>или нормально делай, нормально будет</p>
 		<style>
 			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
+				margin:130px 0 50px;
+				color:#333;
 				text-align:center;
-				font-size:70px;
+				font-size:100px;
 				}
 			#cover p {
 				margin:10px 0 0;
 				text-align:center;
-				color:#FFF;
+				color:#444;
 				font-style:italic;
 				font-size:20px;
 				}
 				#cover p a {
-					color:#FFF;
+					color:#333;
 					}
 		</style>
 	</section>
+
 	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
+		<h2>Фиксированная сетка</h2>
+		<img class="center" src="pictures/fix.png" width="700" height="498" alt="Фиксированная верстка">
+		<style>
+			.center {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Резиновая сетка</h2>
+		<ol id="img-list">
+			<li><img src="pictures/fix-rubber.png" width="350" alt="Резиновая сетка"></li>
+			<li class="next"><img src="pictures/fix-rubber-2.png" width="230" alt="Резиновая сетка не помещается"></li>
 		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+		<style>
+			#img-list {
+				padding-left: 0;
+				margin-left: 0;
+				text-align: center;
+			}
+			#img-list li {
+				width: 40%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			#img-list li::before {
+				display: none;
+			}
+		</style>
 	</section>
+
 	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+		<img src="pictures/pain.gif" height="auto" alt="Боль и страдание" class="shout">
 	</section>
+
 	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+		<h2>Каждому сетку по потребностям!</h2>
+		<img class="adapt-img" src="pictures/fix-and-adaptive.png" width="500" alt="Мобильная сетка">
+		<style>
+			.adapt-img {
+				display: block;
+				width: 500px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
 	</section>
+
 	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
+		<h2>Медиавыражение</h2>
+		<ul>
+			<li class="next"><b>@media</b> - объявляем медиавыражение</li>
+			<li class="next"><b>(...)</b> - условие</li>
+			<li class="next"><b>and</b> - логическое "и"</li>
+			<li class="next"><b>,</b> - логическое "или"</li>
+			<li class="next"><b>not</b> - логическое "не"</li>
+		</ul>
+		<pre><code class="next">@media (...) and (...) {
+			.container {
+				width: 500px;
+				background-color: #ffffff;
+			}
+		}</code></pre>
 	</section>
+
+	<section class="slide">
+		<h2>Медиавыражение. Условия.</h2>
+		<ul>
+			<li><b>width</b></li>
+			<li><b>print</b></li>
+			<li><b>orientation</b></li>
+			<li><b>screen</b></li>
+			<li>и очень, <b>ОЧЕНЬ</b> много других</li>
+		</ul>
+		<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">Read: Using media queries (MDN)</a>
+	</section>
+
+	<section class="slide">
+		<img src="pictures/readthis.gif" width="100%" alt="Читать" class="cover">
+	</section>
+
+	<section class="slide">
+		<h2>Медиавыражение. Условия.</h2>
+		<ul>
+			<li><code>@media (max-width: 559px)</code></li>
+			<li><code>@media (min-width: 560px) and (max-width: 990px)</code></li>
+			<li><code>@media (min-width: 991px)</code></li>
+			<li><code>@media screen and (min-width: 990px)</code></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<img src="pictures/viewport.jpg" width="100%" height="auto" alt="Вьюпорт" class="cover">
+		<h2 class="shout shrink" style="color: #fff;text-shadow: 0 0 5px #000;">viewport</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Вьюпорт</h2>
+		<p class="shrink">Видимая область страницы в браузере, окно браузера включая полосу прокрутки. Относительно вьюпорта рассчитываются размеры тега и относительные размеры его потомков.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Два вьюпорта на мобильном</h2>
+		<img src="pictures/2viewports.jpg" width="100%" height="auto" alt="Два вьюпорта">
+	</section>
+
+	<section class="slide">
+		<h2>Сеточный вьюпорт</h2>
+		<ul>
+			<li>Его ширина варьируется от 750 до 1200px в зависимости от устройства</li>
+			<li>Условия в медиавыражениях (минимальная и максимальная ширина) реагируют на размеры сеточного вьюпорта. Поэтому срабатывают CSS-правила для планшета или десктопа</li>
+		</ul>
+		<img class="viewport" src="pictures/2viewports2.jpg" width="500" alt="Сеточный вьюпорт">
+		<style>
+			.viewport {
+				display: block;
+				width: 500px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Визуальный вьюпорт</h2>
+		<ul>
+			<li>Уменьшает и увеличивает картинку страницы отрендеренную на ширине сеточного вьюпорта</li>
+			<li>Ведь сеточный вьюпорт всегда больше размера экрана и страница никогда не влезет на экран целиком</li>
+		</ul>
+		<img class="viewport" src="pictures/vvport.jpg" alt="Сеточный вьюпорт">
+		<style>
+			.viewport {
+			display: block;
+			width: 450px;
+			margin-left: auto;
+			margin-right: auto;
+			}
+		</style>
+	</section>
+
+
+
+	<section class="slide">
+		<h2>Решение проблемы</h2>
+		<ul>
+			<li class="next">Надо сделать сеточный вьюпорт размером с визуальный</li>
+			<li class="next">Будут срабатывать правильные медиавыражения</li>
+			<li class="next">Страница будет помещаться на визуальный вьюпорт без масштабирования и горизонтального скролла</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2 class="shrink font"><pre>< meta name="viewport" content="width=device-width,initial-scale=1" ></pre></h2>
+		<style>
+			meta{
+				display: block;
+			}
+			.font {
+				position: absolute;
+				top: 50%;
+				width: 100%;
+				transform: translateY(-50%);
+				font-size: 34px!important;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>meta name="viewport" content=</h2>
+		<ul>
+			<li class="next"><b>width = device-width,</b> - ширина сеточного вьюпорта должна быть такой же как ширина устройства</li>
+			<li class="next"><b>initial-scale=1</b> - начальное увеличение - 1 (т.е. никакого)</li>
+		</ul>
+	</section>
+
+
+
 	<section class="slide">
 		<h2>Serious citations</h2>
 		<figure>
@@ -83,6 +232,7 @@
 			<figcaption>Marcus Tullius Cicero</figcaption>
 		</figure>
 	</section>
+
 	<section class="slide">
 		<h2>Code samples</h2>
 		<pre>
@@ -95,6 +245,7 @@
 			<code><mark>&lt;/head&gt;</mark></code>
 		</pre>
 	</section>
+
 	<section class="slide">
 		<h2>Even tables</h2>
 		<table>
@@ -131,18 +282,26 @@
 		</table>
 		<p>It’s good to have information organized.</p>
 	</section>
+
 	<section class="slide" id="picture">
 		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="" class="cover">
+		<figure>
+			<img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
+			<figcaption class="white">
+				<a href="http://fiftyfootshadows.net/">© John Carey</a>
+			</figcaption>
+		</figure>
 		<style>
 			#picture h2 {
 				color:#FFF;
 				}
 		</style>
 	</section>
+
 	<section class="slide">
 		<h2 class="shout shrink">You can even shout this way</h2>
 	</section>
+
 	<section class="slide">
 		<h2>Inner navigation</h2>
 		<ol>
@@ -153,9 +312,11 @@
 			<li class="next">Nobody wants to see the same joke twice</li>
 		</ol>
 	</section>
+
 	<section class="slide grid">
 		<h2>All nicely aligned to grid</h2>
 	</section>
+
 	<section class="slide" id="see-more">
 		<h2 class="shout">
 			<img src="pictures/logo.svg" alt="Shower logo">
@@ -171,16 +332,15 @@
 				}
 		</style>
 	</section>
-	<p class="badge">
+
+	<footer class="badge">
 		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</p>
-	<!--
-		To hide progress bar from entire presentation
-		just remove “progress” element.
-		-->
+	</footer>
+
 	<div class="progress"></div>
+
 	<script src="shower/shower.min.js"></script>
-	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
-	<!-- Photos by John Carey, fiftyfootshadows.net -->
+	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+
 </body>
 </html>
