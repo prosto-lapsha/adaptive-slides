@@ -8,6 +8,11 @@
 	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
 </head>
 <body class="shower list">
+	<style>
+		.slide::after {
+			display: none;
+		}
+	</style>
 
 	<header class="caption">
 		<h1>Адаптивная верстка</h1>
@@ -15,165 +20,531 @@
 	</header>
 
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<figure>
-			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
-		</figure>
+		<h2 class="shrink">Адаптивная верстка</h2>
+		<p>или нормально делай, нормально будет</p>
 		<style>
 			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
+				margin:130px 0 50px;
+				color:#333;
 				text-align:center;
-				font-size:70px;
+				font-size:100px;
 				}
 			#cover p {
 				margin:10px 0 0;
 				text-align:center;
-				color:#FFF;
+				color:#444;
 				font-style:italic;
 				font-size:20px;
 				}
 				#cover p a {
-					color:#FFF;
+					color:#333;
 					}
 		</style>
 	</section>
 
 	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-	</section>
-
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
-
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
-	</section>
-
-	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
-	</section>
-
-	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
-	</section>
-
-	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</section>
-
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<figure>
-			<img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
-		</figure>
+		<h2>Фиксированная сетка</h2>
+		<img class="center" src="pictures/fix.png" width="700" height="498" alt="Фиксированная верстка">
 		<style>
-			#picture h2 {
-				color:#FFF;
-				}
+			.center {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		</style>
 	</section>
 
 	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
+		<h2>Резиновая сетка</h2>
+		<ol id="img-list">
+			<li><img src="pictures/fix-rubber.png" width="350" alt="Резиновая сетка"></li>
+			<li class="next"><img src="pictures/fix-rubber-2.png" width="230" alt="Резиновая сетка не помещается"></li>
+		</ol>
+		<style>
+			#img-list {
+				padding-left: 0;
+				margin-left: 0;
+				text-align: center;
+			}
+			#img-list li {
+				width: 40%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			#img-list li::before {
+				display: none;
+			}
+		</style>
 	</section>
 
 	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
+		<img src="pictures/pain.gif" height="auto" alt="Боль и страдание" class="shout">
 	</section>
 
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
+	<section class="slide">
+		<h2>Каждому сетку по потребностям!</h2>
+		<img class="adapt-img" src="pictures/fix-and-adaptive.png" width="500" alt="Мобильная сетка">
+		<style>
+			.adapt-img {
+				display: block;
+				width: 500px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Медиавыражение</h2>
+		<ul>
+			<li class="next"><b>@media</b> - объявляем медиавыражение</li>
+			<li class="next"><b>(...)</b> - условие</li>
+			<li class="next"><b>and</b> - логическое "и"</li>
+			<li class="next"><b>,</b> - логическое "или"</li>
+			<li class="next"><b>not</b> - логическое "не"</li>
+		</ul>
+		<pre><code class="next">@media (...) and (...) {
+			.container {
+				width: 500px;
+				background-color: #ffffff;
+			}
+		}</code></pre>
+	</section>
+
+	<section class="slide">
+		<h2>Медиавыражение. Условия.</h2>
+		<ul>
+			<li><b>width</b></li>
+			<li><b>print</b></li>
+			<li><b>orientation</b></li>
+			<li><b>screen</b></li>
+			<li>и очень, <b>ОЧЕНЬ</b> много других</li>
+		</ul>
+		<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">Read: Using media queries (MDN)</a>
+	</section>
+
+	<section class="slide">
+		<img src="pictures/readthis.gif" width="100%" alt="Читать" class="cover">
+	</section>
+
+	<section class="slide">
+		<h2>Медиавыражение. Условия.</h2>
+		<ul>
+			<li><code>@media (max-width: 559px)</code></li>
+			<li><code>@media (min-width: 560px) and (max-width: 990px)</code></li>
+			<li><code>@media (min-width: 991px)</code></li>
+			<li><code>@media screen and (min-width: 990px)</code></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<img src="pictures/viewport.jpg" width="100%" height="auto" alt="Вьюпорт" class="cover">
+		<h2 class="shout shrink" style="color: #fff;text-shadow: 0 0 5px #000;">viewport</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Вьюпорт</h2>
+		<p class="shrink">Видимая область страницы в браузере, окно браузера включая полосу прокрутки. Относительно вьюпорта рассчитываются размеры тега и относительные размеры его потомков.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Два вьюпорта на мобильном</h2>
+		<img src="pictures/2viewports.jpg" width="100%" height="auto" alt="Два вьюпорта">
+	</section>
+
+	<section class="slide">
+		<h2>Сеточный вьюпорт</h2>
+		<ul>
+			<li>Его ширина варьируется от 750 до 1200px в зависимости от устройства</li>
+			<li>Условия в медиавыражениях (минимальная и максимальная ширина) реагируют на размеры сеточного вьюпорта. Поэтому срабатывают CSS-правила для планшета или десктопа</li>
+		</ul>
+		<img class="viewport" src="pictures/2viewports2.jpg" width="500" alt="Сеточный вьюпорт">
+		<style>
+			.viewport {
+				display: block;
+				width: 500px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Визуальный вьюпорт</h2>
+		<ul>
+			<li>Уменьшает и увеличивает картинку страницы отрендеренную на ширине сеточного вьюпорта</li>
+			<li>Ведь сеточный вьюпорт всегда больше размера экрана и страница никогда не влезет на экран целиком</li>
+		</ul>
+		<img class="viewport" src="pictures/vvport.jpg" alt="Сеточный вьюпорт">
+		<style>
+			.viewport {
+			display: block;
+			width: 450px;
+			margin-left: auto;
+			margin-right: auto;
+			}
+		</style>
+	</section>
+
+
+
+	<section class="slide">
+		<h2>Решение проблемы</h2>
+		<ul>
+			<li class="next">Надо сделать сеточный вьюпорт размером с визуальный</li>
+			<li class="next">Будут срабатывать правильные медиавыражения</li>
+			<li class="next">Страница будет помещаться на визуальный вьюпорт без масштабирования и горизонтального скролла</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2 class="shrink font"><pre>< meta name="viewport" content="width=device-width,initial-scale=1" ></pre></h2>
+		<style>
+			meta{
+				display: block;
+			}
+			.font {
+				position: absolute;
+				top: 50%;
+				width: 100%;
+				transform: translateY(-50%);
+				font-size: 34px!important;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>meta name="viewport" content=</h2>
+		<ul>
+			<li class="next"><b>width = device-width,</b> - ширина сеточного вьюпорта должна быть такой же как ширина устройства</li>
+			<li class="next"><b>initial-scale=1</b> - начальное увеличение - 1 (т.е. никакого)</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Подробнее про вьюпорты</h2>
+		<ul>
+			<li><a href="http://www.beskrovnyy.com/verstka/skaz-o-dvux-vyuportax-chast-pervaya/">Сказ о двух вьюпортах — часть первая</a></li>
+			<li><a href="http://www.beskrovnyy.com/verstka/skaz-o-dvux-vyuportax-chast-vtoraya/">Сказ о двух вьюпортах — часть вторая</a></li>
+			<li><a href="http://www.quirksmode.org/blog/archives/2010/09/combining_meta.html">PPK: Combining meta viewport and media queries</a></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2 class="shrink shout">Адаптивная графика</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Экранные пиксели и CSS-пиксели</h2>
+		<ul>
+		<li>2 разные сущности</li>
+		<li>Можно заметить при зуме или на современных устройствах</li>
+		</ul>
+		<img class="center" width="600" height="auto" src="pictures/pixel.jpg" alt="Пиксели">
+	</section>
+
+	<section class="slide">
+		<h2>Экраны с повышенной плотность пикселей</h2>
+		<p>Количество физический пикселей больше, чем у обычного экрана, а сами пиксели меньше</p>
+	</section>
+
+	<section class="slide">
+		<img src="pictures/screens.jpg" alt="Два экрана" class="cover">
+	</section>
+
+	<section class="slide">
+		<h2>Где ретина?</h2>
+		<img class="center" width="600" height="auto" src="pictures/retina1-1.JPG" alt="Найди ретину">
+	</section>
+	<section class="slide">
+		<h2>Где ретина?</h2>
+		<img class="center" width="600" height="auto" src="pictures/retina1.JPG" alt="Найди ретину">
+	</section>
+	<section class="slide">
+		<h2>Где ретина?</h2>
+		<img class="center" width="700" height="auto" src="pictures/retina-2-2.JPG" alt="Найди ретину">
+	</section>
+	<section class="slide">
+		<h2>Где ретина?</h2>
+		<img class="center" width="700" height="auto" src="pictures/retina-2.JPG" alt="Найди ретину">
+	</section>
+	<section class="slide">
+		<h2>Где ретина?</h2>
+		<img class="center" width="800" height="auto" src="pictures/retina-3-1.JPG" alt="Найди ретину">
+	</section>
+	<section class="slide">
+		<h2>Где ретина?</h2>
+		<img class="center" width="800" height="auto" src="pictures/retina-3.JPG" alt="Найди ретину">
+	</section>
+	<section class="slide">
+		<h2>Проблемы с графикой на ретине</h2>
+		<p>Графику для ретина-экранов надо специальным образом подготавливать, чтобы изображения не были "замыленными"</p>
+	</section>
+	<section class="slide">
+		<h2>Определение ретина-экрана</h2>
+		<pre><code>
+@media (min-resolution: 144dpi),
+		(min-resolution: 1.5dppx) {...}
+		</code></pre>
+		<ul>
+			<li class="next"><b>DPI</b> - Dots Per Inch (точка на дюйм)</li>
+			<li class="next"><b>DPPX</b> - Dots Per Pixel (точка на пиксель)</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Содержание для ретинизации</h2>
+		<ul>
+			<li class="next">Текст</li>
+			<li class="next">Растровые фоновые изображения</li>
+			<li class="next">Растровые константные изобрадния (тег < img >)</li>
+			<li class="next">Векторные изображения</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Текст</h2>
+		<p>С текстом проблем нет. Старайтесь по-максимуму использовать текст там, где это можно</p>
+	</section>
+
+	<section class="slide">
+		<h2>Растровая графика</h2>
+		<ul>
+			<li><b>Растрова графика</b> - секта разнцветных пиксеей. Ширина сетки фиксированная</li>
+			<li>Форматы - <b>jpg</b>, <b>gif</b>, <b>png</b> и другие</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Ретина и фоновые изображения</h2>
+		<img src="pictures/retina-bg.jpg" width="498" height="auto" alt="Ретина в лоб" class="center">
+	</section>
+
+	<section class="slide">
+		<h2>Ретина и фоновые изображения</h2>
+		<img src="pictures/retina-bg-2.jpg"width="500" height="auto" alt="Ретина в лоб" class="center">
+	</section>
+
+	<section class="slide">
+		<h2>Ретина и растовые < img ></h2>
+		<ul>
+			<li class="next">Старайтесь использовать возможности CSS вместо картинок: тени, закругления, градиенты</li>
+			<li class="next">Простые изображения можно перевести в вектор</li>
+			<li class="next">Не анимированные GIF старайтесь перевести в PNG</li>
+			<li class="next">Если необходимо использовать растровое изображение, то используйте прием с увеличенной картинкой</li>
+		</ul>
+		<img class="center next" src="pictures/retina-img.jpg" width="600" height="auto" alt="Плохой вариант">
+	</section>
+
+	<section class="slide">
+		<h2>Ретина и растовые < img ></h2>
+		<p>Чтобы отдавать увеличенные картинки только на ретиновые экраны, используем <b>srcset</b></p>
+		<img src="pictures/retina-img-2.jpg" width="600" height="auto" alt="Хороший вариант" class="center">
+	</section>
+
+	<section class="slide">
+		<h2>Оптимизация растровых изображений</h2>
+		<ul>
+			<li>Оптимизируйте изображения с помощью <a href="https://imageoptim.com/api">ImageOptim</a></li>
+			<li>Используйте <a href="https://pngmini.com/">ImageAlpha</a> для дополнительной оптимизации полупрозрачных PNG</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Векторная графика</h2>
+		<ul>
+			<li><b>Векторная графика</b> - изображения, описываемые математическими функциями. Размер не важен.	Бесконечно масштабируемы в любом направлении без потери качества</li>
+			<li>Векторный формат веба: <b>SVG</b></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Ретина и векторная графика</h2>
+		<ul>
+			<li>SVG масштабируются автоматически и не теряют качество.</li>
+			<li>Поддержка SVG: IE9+ и все современные браузер</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Сводка по ретинизации</h2>
+		<ul>
+			<li class="next">Текст выглядит отлино сам по себе</li>
+			<li class="next">PNG / JPEG — увеличивайте изображения в два раза</li>
+			<li class="next">GIF переводите в PNG и увеличивайте в два раза</li>
+			<li class="next">Анимированный GIF — увеличивайте в два раза</li>
+			<li class="next">Фоновые изображения — используйте background-size</li>
+			<li class="next">Лучше отдавайте разные версии растровой графики для ретины и нет</li>
+			<li class="next">Оптимизируйте растровую графику</li>
+			<li class="next">SVG — выглядит отлично. При необходимости используйте фоллбеки</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Как сделать < img > адаптивным?</h2>
+		<p>С помощью новых атрибутов <b>srcset</b>, <b>sizes</b> и тега-обёртки <b>< picture ></b>.</p>
+		<p>Тег <b>< picture ></b> в сочетании с новыми атрибутами определяет умные настройки, подменяя src у <b>< img ></b>, когда это необходимо. Он даёт возможность разработчику передать браузеру информацию, необходимую для выбора подходящей картинки.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Браузер выбирает картинку</h2>
+		<div class="next">
+			<p>Браузер знает</p>
+			<ul>
+				<li>Ширина вьюпорта</li>
+				<li>Ретиновость экарана</li>
+			</ul>
+		</div>
+		<div class="next">
+			<p>Браузер не знает</p>
+			<ul>
+				<li>Размер картинки</li>
+				<li>Картинка к вьпорту</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<img src="pictures/cat.gif" alt="Время для игр" width="100%" height="auto" class="cover">
+	</section>
+
+	<section class="slide">
+		<h2>Выбери что загрузить</h2>
+		<img src="pictures/g-retina-1.JPG" width="100%" height="auto" alt="Выбери изображение">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить</h2>
+		<img src="pictures/g-retina-2.JPG" width="100%" height="auto" alt="Выбери изображение">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить</h2>
+		<img src="pictures/g-retina-3.JPG" width="100%" height="auto" alt="Выбери изображение">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить</h2>
+		<img src="pictures/g-retina-4.JPG" width="100%" height="auto" alt="Выбери изображение">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить</h2>
+		<img src="pictures/g-retina-5.JPG" width="100%" height="auto" alt="Выбери изображение">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить</h2>
+		<img src="pictures/g-retina-6.JPG" width="100%" height="auto" alt="Выбери изображение">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить</h2>
+		<img src="pictures/g-retina-7.JPG" width="100%" height="auto" alt="Выбери изображение">
+	</section>
+
+	<section class="slide">
+		<h2>Назначение srcset</h2>
+		<ul>
+			<li class="next">Дать браузеру возможность выбрать лучший вариант из предложенных</li>
+			<li class="next">Рассказать браузеру о фактических размерах предложенных картинок</li>
+			<li class="next">Не предназначен для кадрирования</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Кадрирование изображений</h2>
+		<img class="center" src="pictures/cut.JPG" width="100%" height="auto" alt="Кадрирование изображений">
+	</section>
+
+	<section class="slide">
+		<img src="pictures/cat.gif" alt="Время для игр" width="100%" height="auto" class="cover">
+	</section>
+
+	<section class="slide">
+		<h2>Выбери что загрузить 2</h2>
+		<img src="pictures/g-cut-1.JPG" width="100%" height="auto" alt="Выбери изображение" class="center">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить 2</h2>
+		<img src="pictures/g-cut-1-1.JPG" width="100%" height="auto" alt="Выбери изображение" class="center">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить 2</h2>
+		<img src="pictures/g-cut-2.JPG" width="100%" height="auto" alt="Выбери изображение" class="center">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить 2</h2>
+		<img src="pictures/g-cut-2-1.JPG" width="100%" height="auto" alt="Выбери изображение" class="center">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить 2</h2>
+		<img src="pictures/g-cut-3.JPG" width="100%" height="auto" alt="Выбери изображение" class="center">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить 2</h2>
+		<img src="pictures/g-cut-3-1.JPG" width="100%" height="auto" alt="Выбери изображение" class="center">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить 2</h2>
+		<img src="pictures/g-cut-4.JPG" width="100%" height="auto" alt="Выбери изображение" class="center">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить 2</h2>
+		<img src="pictures/g-cut-4-1.JPG" width="100%" height="auto" alt="Выбери изображение" class="center">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить 2. Бонус</h2>
+		<img src="pictures/g-cut-5.JPG" width="100%" height="auto" alt="Выбери изображение" class="center">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить 2. Бонус</h2>
+		<img src="pictures/g-cut-5-1.JPG" width="100%" height="auto" alt="Выбери изображение" class="center">
+	</section>
+	<section class="slide">
+		<h2>Выбери что загрузить 2. Бонус</h2>
+		<img src="pictures/g-cut-5-2.JPG" width="100%" height="auto" alt="Выбери изображение" class="center">
+	</section>
+
+	<section class="slide">
+		<h2>Назначение тега source</h2>
+		<ul>
+			<li class="next">В зависимости от условий задать нужное изображение</li>
+			<li class="next">Рассказать браузеру о том, что есть картинки в новых форматах</li>
+			<li class="next">Рассказать браузеру о том, какая картинка подходит к вьюпорту</li>
+			<li class="next">Можно использовать для кадрирования и сочетается с srcset, в котором можно прописать варианты одной и той же картинки разного качества.</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Поддержка < picture > и полифил</h2>
+		<ul>
+			<li>Поддержка: Chrome, Operа, Firefox, Edge</li>
+			<li>Полифил: <a href="http://scottjehl.github.io/picturefill/">Picturefill</a></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<img class="cover center" width="100%" height="auto" src="pictures/end.gif" alt="Конец">
+	</section>
+
+	<section class="slide">
+		<h2>ССЫЛОЧКИ!!!11!!</h2>
+		<ul>
+			<li><a href="http://mydevice.io/devices/">
+				Таблица физических и независимых от плотности пикселей для всех устройств</a></li>
+			<li><a href="https://habrahabr.ru/company/yandex/blog/307064/">Делать ли мобильную версию? 5 распространенных проблем, которые решает адаптивная верстка.</a></li>
+			<li><a href="http://frontender.info/responsive-images/">Отзывчивые изображения: примеры использования и документированные снипеты, чтобы вы могли начать их использовать.</a></li>
+			<li><a href="http://css-live.ru/articles/pochemu-my-ne-mozhem-delat-po-nastoyashhemu-adaptivnye-izobrazheniya-pri-pomoshhi-css-ili-javascript.html">Почему мы не можем делать по-настоящему адаптивные изображения при помощи CSS или JavaScript.</a></li>
+			<li><a href="https://svgontheweb.com/ru/">SVG в вебе: практическое руководство</a></li>
+			<li><a href="https://alistapart.com/article/responsive-images-in-practice">Responsive Images in Practice</a></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2 class="shrink center"><a class="link" href="https://prosto-lapsha.github.io/adaptive-slides/">prosto-lapsha.github.io/adaptive-slides/</a></h2>
+		<style>
+			.link {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				font-size: 62px!important;
+			}
+		</style>
 	</section>
 
 	<section class="slide" id="see-more">
@@ -184,11 +555,11 @@
 		<style>
 			#see-more h2 {
 				font-size:100px
-				}
+			}
 			#see-more img {
 				width:0.72em;
 				height:0.72em;
-				}
+			}
 		</style>
 	</section>
 
